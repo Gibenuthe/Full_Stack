@@ -12,7 +12,7 @@ export class TutorialsListComponent implements OnInit {
   tutorials?: Tutorial[];
   currentTutorial: Tutorial = {};
   currentIndex = -1;
-  title = '';
+  pais = '';
 
   constructor(private tutorialService: TutorialService) { }
 
@@ -53,11 +53,11 @@ export class TutorialsListComponent implements OnInit {
       });
   }
 
-  searchTitle(): void {
+  searchCountry(): void {
     this.currentTutorial = {};
     this.currentIndex = -1;
 
-    this.tutorialService.findByTitle(this.title)
+    this.tutorialService.findByCountry(this.pais)
       .subscribe({
         next: (data) => {
           this.tutorials = data;

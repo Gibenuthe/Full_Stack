@@ -4,16 +4,20 @@ const Tutorial = db.tutorials;
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
   // Validate request
-  if (!req.body.title) {
+  if (!req.body.pais) {
     res.status(400).send({ message: "Content can not be empty!" });
     return;
   }
 
   // Create a Tutorial
   const tutorial = new Tutorial({
-    title: req.body.title,
-    description: req.body.description,
-    published: req.body.published ? req.body.published : false
+    nome: req.body.nome,
+    fone: req.body.fone,
+    email: req.body.email,
+    pais: req.body.pais,
+    pessoas: req.body.pessoas,
+    animais: req.body.animais,
+    idiomas: req.body.idiomas,
   });
 
   // Save Tutorial in the database
@@ -32,8 +36,8 @@ exports.create = (req, res) => {
 
 // Retrieve all Tutorials from the database.
 exports.findAll = (req, res) => {
-  const title = req.query.title;
-  var condition = title ? { title: { $regex: new RegExp(title), $options: "i" } } : {};
+  const pais = req.query.pais;
+  var condition = pais ? { pais: { $regex: new RegExp(pais), $options: "i" } } : {};
 
   Tutorial.find(condition)
     .then(data => {

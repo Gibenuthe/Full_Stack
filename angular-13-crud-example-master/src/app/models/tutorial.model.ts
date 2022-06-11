@@ -1,6 +1,10 @@
 export class Tutorial {
-  id?: any;
-  title?: string;
-  description?: string;
-  published?: boolean;
+  id?: string;
+  nome?: string;
+  fone?: string;
+  email?: string;
+  pais?: string;
+  pessoas?: Number;
+  animais?: boolean;
+  idiomas?: string;
 }
