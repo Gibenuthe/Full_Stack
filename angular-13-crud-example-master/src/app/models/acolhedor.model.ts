@@ -1,4 +1,4 @@
-export class Tutorial {
+export class Acolhedor {
   id?: string;
   nome?: string;
   fone?: string;

@@ -23,22 +23,22 @@
     <ul class="list-group">
       <li
         class="list-group-item"
-        *ngFor="let tutorial of tutorials; let i = index"
+        *ngFor="let acolhedor of acolhedores; let i = index"
         [class.active]="i == currentIndex"
-        (click)="setActiveTutorial(tutorial, i)"
+        (click)="setActiveAcolhedor(acolhedor, i)"
       >
-        {{ tutorial.pais }}
+        {{ acolhedor.pais }}
       </li>
     </ul>
 
-    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTutorials()">
+    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllAcolhedores()">
       Remover Todos
     </button>
   </div>
   <div class="col-md-6">
-    <app-tutorial-details
+    <app-dados-acolhedor>
       [viewMode]="true"
-      [currentTutorial]="currentTutorial"
-    ></app-tutorial-details>
+      [currentAcolhedor]="currentAcolhedor"
+    ></app-dados-acolhedor>
   </div>
 </div>

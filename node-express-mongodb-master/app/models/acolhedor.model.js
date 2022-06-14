@@ -17,7 +17,7 @@ module.exports = mongoose => {
     object.id = _id;
     return object;
   });
-
-  const Tutorial = mongoose.model("tutorial", schema);
-  return Tutorial;
+// nome do banco pra conectar
+  const Acolhedor = mongoose.model("tutorials", schema);
+  return Acolhedor;
 };

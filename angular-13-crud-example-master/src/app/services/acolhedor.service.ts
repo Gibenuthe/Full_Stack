@@ -1,22 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Tutorial } from '../models/tutorial.model';
+import { Acolhedor } from '../models/acolhedor.model';
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
+const baseUrl = 'http://localhost:8080/api/acolhedores';
 
 @Injectable({
   providedIn: 'root'
 })
-export class TutorialService {
+export class AcolhedorService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<Tutorial[]> {
-    return this.http.get<Tutorial[]>(baseUrl);
+  getAll(): Observable<Acolhedor[]> {
+    return this.http.get<Acolhedor[]>(baseUrl);
   }
 
-  get(id: any): Observable<Tutorial> {
+  get(id: any): Observable<Acolhedor> {
     return this.http.get(`${baseUrl}/${id}`);
   }
 
@@ -36,7 +36,7 @@ export class TutorialService {
     return this.http.delete(baseUrl);
   }
 
-  findByCountry(pais: any): Observable<Tutorial[]> {
-    return this.http.get<Tutorial[]>(`${baseUrl}?pais=${pais}`);
+  findByCountry(pais: any): Observable<Acolhedor[]> {
+    return this.http.get<Acolhedor[]>(`${baseUrl}?pais=${pais}`);
   }
 }

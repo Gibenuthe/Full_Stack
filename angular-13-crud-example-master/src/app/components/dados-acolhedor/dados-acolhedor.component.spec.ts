@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TutorialsListComponent } from './tutorials-list.component';
+import { DadosAcolhedorComponent } from './dados-acolhedor.component';
 
-describe('TutorialsListComponent', () => {
-  let component: TutorialsListComponent;
-  let fixture: ComponentFixture<TutorialsListComponent>;
+describe('DadosAcolhedorComponent', () => {
+  let component: DadosAcolhedorComponent;
+  let fixture: ComponentFixture<DadosAcolhedorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TutorialsListComponent ]
+      declarations: [ DadosAcolhedorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TutorialsListComponent);
+    fixture = TestBed.createComponent(DadosAcolhedorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
