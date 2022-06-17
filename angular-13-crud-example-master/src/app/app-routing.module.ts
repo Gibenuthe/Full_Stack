@@ -5,9 +5,9 @@ import { TutorialDetailsComponent } from './components/dados-acolhedor/dados-aco
 import { AddTutorialComponent } from './components/add-acolhedor/add-acolhedor.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'tutorials', pathMatch: 'full' },
-  { path: 'tutorials', component: TutorialsListComponent },
-  { path: 'tutorials/:id', component: TutorialDetailsComponent },
+  { path: '', redirectTo: 'acolhedores', pathMatch: 'full' },
+  { path: 'acolhedores', component: TutorialsListComponent },
+  { path: 'acolhedores/:id', component: TutorialDetailsComponent },
   { path: 'add', component: AddTutorialComponent }
 ];
 

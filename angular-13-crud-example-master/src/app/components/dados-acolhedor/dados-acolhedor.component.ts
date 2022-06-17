@@ -91,7 +91,7 @@ export class TutorialDetailsComponent implements OnInit {
     this.tutorialService.delete(this.currentTutorial.id).subscribe({
       next: (res) => {
         console.log(res);
-        this.router.navigate(['/tutorials']);
+        this.router.navigate(['/acolhedores']);
       },
       error: (e) => console.error(e),
     });
