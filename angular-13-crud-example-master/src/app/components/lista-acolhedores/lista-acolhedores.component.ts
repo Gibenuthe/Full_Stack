@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Tutorial } from 'src/app/models/tutorial.model';
-import { TutorialService } from 'src/app/services/tutorial.service';
+import { Tutorial } from 'src/app/models/acolhedor.model';
+import { TutorialService } from 'src/app/services/acolhedor.service';
 
 @Component({
-  selector: 'app-tutorials-list',
-  templateUrl: './tutorials-list.component.html',
-  styleUrls: ['./tutorials-list.component.css']
+  selector: 'app-lista-acolhedores',
+  templateUrl: './lista-acolhedores.component.html',
+  styleUrls: ['./lista-acolhedores.component.css']
 })
 export class TutorialsListComponent implements OnInit {
 

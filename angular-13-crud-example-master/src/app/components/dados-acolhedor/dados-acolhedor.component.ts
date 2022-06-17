@@ -1,12 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TutorialService } from 'src/app/services/tutorial.service';
+import { TutorialService } from 'src/app/services/acolhedor.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Tutorial } from 'src/app/models/tutorial.model';
+import { Tutorial } from 'src/app/models/acolhedor.model';
 
 @Component({
-  selector: 'app-tutorial-details',
-  templateUrl: './tutorial-details.component.html',
-  styleUrls: ['./tutorial-details.component.css'],
+  selector: 'app-dados-acolhedor',
+  templateUrl: './dados-acolhedor.component.html',
+  styleUrls: ['./dados-acolhedor.component.css'],
 })
 export class TutorialDetailsComponent implements OnInit {
   @Input() viewMode = false;

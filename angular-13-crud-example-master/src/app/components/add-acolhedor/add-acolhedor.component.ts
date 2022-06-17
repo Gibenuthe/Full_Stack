@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Tutorial } from 'src/app/models/tutorial.model';
-import { TutorialService } from 'src/app/services/tutorial.service';
+import { Tutorial } from 'src/app/models/acolhedor.model';
+import { TutorialService } from 'src/app/services/acolhedor.service';
 
 @Component({
-  selector: 'app-add-tutorial',
-  templateUrl: './add-tutorial.component.html',
-  styleUrls: ['./add-tutorial.component.css'],
+  selector: 'app-add-acolhedor',
+  templateUrl: './add-acolhedor.component.html',
+  styleUrls: ['./add-acolhedor.component.css'],
 })
 export class AddTutorialComponent implements OnInit {
   tutorial: Tutorial = {
