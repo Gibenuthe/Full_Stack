@@ -57,122 +57,147 @@
           [(ngModel)]="tutorial.pais"
           name="pais"
         >
-          <option value="0" label="Selecione um país ... " selected="selected">
-            Selecione um país ...
+        <option value="0" label="Selecione um país ... " selected="selected">
+          Selecione um país ...
+        </option>
+        <optgroup id="country-optgroup-Asia" label="Asia">
+          <option value="Afeganistão" label="Afeganistao">Afeganistao</option>
+          <option value="Arábia Saudita" label="Arabia Saudita">
+            Arabia Saudita
           </option>
-          <optgroup id="country-optgroup-Asia" label="Asia">
-            <option value="AF" label="Afeganistao">Afeganistao</option>
-            <option value="SA" label="Arabia Saudita">Arabia Saudita</option>
-            <option value="AM" label="Armenia">Armenia</option>
-            <option value="AZ" label="Azerbaijao">Azerbaijao</option>
-            <option value="BH" label="Bahrein">Bahrein</option>
-            <option value="BD" label="Bangladesh">Bangladesh</option>
-            <option value="BN" label="Brunei">Brunei</option>
-            <option value="BT" label="Butao">Butao</option>
-            <option value="KH" label="Camboja">Camboja</option>
-            <option value="KZ" label="Cazaquistao">Cazaquistao</option>
-            <option value="CN" label="China">China</option>
-            <option value="KP" label="Coreia do Norte">Coreia do Norte</option>
-            <option value="KR" label="Coreia do Sul">Coreia do Sul</option>
-            <option value="AE" label="Emirados Arabes">Emirados Arabes</option>
-            <option value="PH" label="Filipinas">Filipinas</option>
-            <option value="GE" label="Georgia">Georgia</option>
-            <option value="HK" label="Hong Kong SAR China">
-              Hong Kong SAR China
-            </option>
-            <option value="YE" label="Iemen">Iemen</option>
-            <option value="IN" label="India">India</option>
-            <option value="ID" label="Indonesia">Indonesia</option>
-            <option value="IR" label="Ira">Ira</option>
-            <option value="IQ" label="Iraque">Iraque</option>
-            <option value="IL" label="Israel">Israel</option>
-            <option value="JP" label="Japao">Japao</option>
-            <option value="JO" label="Jordania">Jordania</option>
-            <option value="KW" label="Kuwait">Kuwait</option>
-            <option value="LA" label="Laos">Laos</option>
-            <option value="LB" label="Libano">Libano</option>
-            <option value="MO" label="Macau SAR China">Macau SAR China</option>
-            <option value="MY" label="Malasia">Malasia</option>
-            <option value="MV" label="Maldivas">Maldivas</option>
-            <option value="MN" label="Mongolia">Mongolia</option>
-            <option value="MM" label="Myanmar [Burma]">Myanmar [Burma]</option>
-            <option value="NP" label="Nepal">Nepal</option>
-            <option value="OM" label="Oma">Oma</option>
-            <option value="PS" label="Palestina">Palestina</option>
-            <option value="PK" label="Paquistao">Paquistao</option>
-            <option value="QA" label="Qatar">Qatar</option>
-            <option value="KG" label="Quirguistao">Quirguistao</option>
-            <option value="YD" label="Rep. Dem. Iemen">Rep. Dem. Iemen</option>
-            <option value="SG" label="Singapura">Singapura</option>
-            <option value="LK" label="Sri Lanka">Sri Lanka</option>
-            <option value="SY" label="Siria">Siria</option>
-            <option value="TW" label="Taiwan">Taiwan</option>
-            <option value="TJ" label="Tadjiquistao">Tadjiquistao</option>
-            <option value="TH" label="Tailandia">Tailandia</option>
-            <option value="TL" label="Timor-Leste">Timor-Leste</option>
-            <option value="TR" label="Turquia">Turquia</option>
-            <option value="TM" label="Turcomenistao">Turcomenistao</option>
-            <option value="UZ" label="Uzbequistao">Uzbequistao</option>
-            <option value="VN" label="Vietna">Vietna</option>
-          </optgroup>
-          <optgroup id="country-optgroup-Europe" label="Europe">
-            <option value="AL" label="Albania">Albania</option>
-            <option value="AD" label="Andorra">Andorra</option>
-            <option value="AT" label="Austria">Austria</option>
-            <option value="BY" label="Belarus">Belarus</option>
-            <option value="BE" label="Belgica">Belgica</option>
-            <option value="BA" label="Bosnia e Herzegovina">
-              Bosnia e Herzegovina
-            </option>
-            <option value="BG" label="Bulgaria">Bulgaria</option>
-            <option value="HR" label="Croacia">Croacia</option>
-            <option value="CY" label="Chipre">Chipre</option>
-            <option value="CZ" label="Republica Checa">Republica Checa</option>
-            <option value="DK" label="Dinamarca">Dinamarca</option>
-            <option value="EE" label="Estonia">Estonia</option>
-            <option value="FO" label="Ilhas Faroe">Ilhas Faroe</option>
-            <option value="FI" label="Finlandia">Finlandia</option>
-            <option value="FR" label="Franca">Franca</option>
-            <option value="DE" label="Alemanha">Alemanha</option>
-            <option value="GI" label="Gibraltar">Gibraltar</option>
-            <option value="GR" label="Grecia">Grecia</option>
-            <option value="GG" label="Guernsey">Guernsey</option>
-            <option value="HU" label="Hungria">Hungria</option>
-            <option value="IS" label="Islandia">Islandia</option>
-            <option value="IE" label="Irlanda">Irlanda</option>
-            <option value="IM" label="Ilha de Man">Ilha de Man</option>
-            <option value="IT" label="Italia">Italia</option>
-            <option value="JE" label="Jersey">Jersey</option>
-            <option value="LV" label="Letonia">Letonia</option>
-            <option value="LI" label="Liechtenstein">Liechtenstein</option>
-            <option value="LT" label="Lituania">Lituania</option>
-            <option value="LU" label="Luxemburgo">Luxemburgo</option>
-            <option value="MK" label="Macedonia">Macedonia</option>
-            <option value="MT" label="Malta">Malta</option>
-            <option value="MD" label="Moldavia">Moldavia</option>
-            <option value="MC" label="Monaco">Monaco</option>
-            <option value="ME" label="Montenegro">Montenegro</option>
-            <option value="NL" label="Holanda">Holanda</option>
-            <option value="NO" label="Noruega">Noruega</option>
-            <option value="PL" label="Polonia">Polonia</option>
-            <option value="PT" label="Portugal">Portugal</option>
-            <option value="RO" label="Romenia">Romenia</option>
-            <option value="RU" label="Russia">Russia</option>
-            <option value="SM" label="San Marino">San Marino</option>
-            <option value="RS" label="Servia">Servia</option>
-            <option value="SK" label="Eslovaquia">Eslovaquia</option>
-            <option value="SI" label="Eslovenia">Eslovenia</option>
-            <option value="ES" label="Espanha">Espanha</option>
-            <option value="SJ" label="Svalbard e Jan Mayen">
-              Svalbard e Jan Mayen
-            </option>
-            <option value="SE" label="Suecia">Suecia</option>
-            <option value="CH" label="Suica">Suica</option>
-            <option value="UA" label="Ucrania">Ucrania</option>
-            <option value="GB" label="Reino Unido">Reino Unido</option>
-            <option value="VA" label="Vaticano">Vaticano</option>
-            <option value="AX" label="Ilhas Åland">Ilhas Åland</option>
-          </optgroup>
+          <option value="Armênia" label="Armenia">Armenia</option>
+          <option value="Azerbaijão" label="Azerbaijao">Azerbaijao</option>
+          <option value="Barein" label="Bahrein">Bahrein</option>
+          <option value="Bangladesh" label="Bangladesh">Bangladesh</option>
+          <option value="Brunei" label="Brunei">Brunei</option>
+          <option value="Butão" label="Butao">Butao</option>
+          <option value="Cambodja" label="Camboja">Camboja</option>
+          <option value="Catar" label="Catar">Catar</option>
+          <option value="Cazaquistão" label="Cazaquistao">Cazaquistao</option>
+          <option value="China" label="China">China</option>
+          <option value="Coréia do Norte" label="Coreia do Norte">
+            Coreia do Norte
+          </option>
+          <option value="Coréia do Sul" label="Coreia do Sul">
+            Coreia do Sul
+          </option>
+          <option
+            value="Emirados Árabes Unidos"
+            label="Emirados Arabes Unidos"
+          >
+            Emirados Arabes Unidos
+          </option>
+          <option value="Filipinas" label="Filipinas">Filipinas</option>
+          <option value="Georgia" label="Georgia">Georgia</option>
+          <option value="Hong Kong" label="Hong Kong SAR China">
+            Hong Kong SAR China
+          </option>
+          <option value="Iemen" label="Iemen">Iemen</option>
+          <option value="Índia" label="India">India</option>
+          <option value="Indonésia" label="Indonesia">Indonesia</option>
+          <option value="Irã" label="Ira">Ira</option>
+          <option value="Iraque" label="Iraque">Iraque</option>
+          <option value="Israel" label="Israel">Israel</option>
+          <option value="Japão" label="Japao">Japao</option>
+          <option value="Jordânia" label="Jordania">Jordania</option>
+          <option value="Kuwait" label="Kuwait">Kuwait</option>
+          <option value="Laos" label="Laos">Laos</option>
+          <option value="Líbano" label="Libano">Libano</option>
+          <option value="Macau" label="Macau SAR China">
+            Macau SAR China
+          </option>
+          <option value="Malásia" label="Malasia">Malasia</option>
+          <option value="Maldivas" label="Maldivas">Maldivas</option>
+          <option value="Mongolia" label="Mongolia">Mongolia</option>
+          <option value="Myanmar" label="Myanmar [Burma]">
+            Myanmar [Burma]
+          </option>
+          <option value="Nepal" label="Nepal">Nepal</option>
+          <option value="Omã" label="Oma">Oma</option>
+          <option value="Palestina" label="Palestina">Palestina</option>
+          <option value="Paquistão" label="Paquistao">Paquistao</option>
+          <option value="Quirguistão" label="Quirguistao">Quirguistao</option>
+          <option value="Rep. Dem. do Iemen" label="Rep. Dem. Iemen">
+            Rep. Dem. Iemen
+          </option>
+          <option value="Singapura" label="Singapura">Singapura</option>
+          <option value="Sri Lanka" label="Sri Lanka">Sri Lanka</option>
+          <option value="Síria" label="Siria">Siria</option>
+          <option value="Taiwan" label="Taiwan">Taiwan</option>
+          <option value="Tadjiquistão" label="Tadjiquistao">
+            Tadjiquistao
+          </option>
+          <option value="Tailândia" label="Tailandia">Tailandia</option>
+          <option value="Timor-Leste" label="Timor-Leste">Timor-Leste</option>
+          <option value="Turquia" label="Turquia">Turquia</option>
+          <option value="Turcomenistão" label="Turcomenistao">
+            Turcomenistao
+          </option>
+          <option value="Uzbequistão" label="Uzbequistao">Uzbequistao</option>
+          <option value="Vietnã" label="Vietna">Vietna</option>
+        </optgroup>
+        <optgroup id="country-optgroup-Europe" label="Europe">
+          <option value="Albânia" label="Albania">Albania</option>
+          <option value="Alemanha" label="Alemanha">Alemanha</option>
+          <option value="Andorra" label="Andorra">Andorra</option>
+          <option value="Áustria" label="Austria">Austria</option>
+          <option value="Belarus" label="Belarus">Belarus</option>
+          <option value="Bélgica" label="Belgica">Belgica</option>
+          <option value="Bosnia e Herzegovina" label="Bosnia e Herzegovina">
+            Bosnia e Herzegovina
+          </option>
+          <option value="Bulgária" label="Bulgaria">Bulgaria</option>
+          <option value="Croácia" label="Croacia">Croacia</option>
+          <option value="Chipre" label="Chipre">Chipre</option>
+          <option value="Dinamarca" label="Dinamarca">Dinamarca</option>
+          <option value="Eslováquia" label="Eslovaquia">Eslovaquia</option>
+          <option value="Eslovênia" label="Eslovenia">Eslovenia</option>
+          <option value="Espanha" label="Espanha">Espanha</option>
+          <option value="Estônia" label="Estonia">Estonia</option>
+          <option value="Finlândia" label="Finlandia">Finlandia</option>
+          <option value="França" label="Franca">Franca</option>
+          <option value="Gibraltar" label="Gibraltar">Gibraltar</option>
+          <option value="Grécia" label="Grecia">Grecia</option>
+          <option value="Guernsey" label="Guernsey">Guernsey</option>
+          <option value="Holanda" label="Holanda">Holanda</option>
+          <option value="Hungria" label="Hungria">Hungria</option>
+          <option value="Ilhas Åland" label="Ilhas Åland">Ilhas Åland</option>
+          <option value="Ilha de Man" label="Ilha de Man">Ilha de Man</option>
+          <option value="Ilhas Faroe" label="Ilhas Faroe">Ilhas Faroe</option>
+          <option value="Irlanda" label="Irlanda">Irlanda</option>
+          <option value="Islândia" label="Islandia">Islandia</option>
+          <option value="Itália" label="Italia">Italia</option>
+          <option value="Jersey" label="Jersey">Jersey</option>
+          <option value="Letônia" label="Letonia">Letonia</option>
+          <option value="Lietchenstein" label="Liechtenstein">
+            Liechtenstein
+          </option>
+          <option value="Lituânia" label="Lituania">Lituania</option>
+          <option value="Luxemburgo" label="Luxemburgo">Luxemburgo</option>
+          <option value="Macedônia" label="Macedonia">Macedonia</option>
+          <option value="Malta" label="Malta">Malta</option>
+          <option value="Moldávia" label="Moldavia">Moldavia</option>
+          <option value="Mônaco" label="Monaco">Monaco</option>
+          <option value="Montenegro" label="Montenegro">Montenegro</option>
+          <option value="Noruega" label="Noruega">Noruega</option>
+          <option value="Polônia" label="Polonia">Polonia</option>
+          <option value="Portugal" label="Portugal">Portugal</option>
+          <option value="Reino Unido" label="Reino Unido">Reino Unido</option>
+          <option value="República Checa" label="Republica Checa">
+            Republica Checa
+          </option>
+          <option value="Romênia" label="Romenia">Romenia</option>
+          <option value="Rússia" label="Russia">Russia</option>
+          <option value="San Marino" label="San Marino">San Marino</option>
+          <option value="Sérvia" label="Servia">Servia</option>
+          <option value="Svalbard e Jan Mayen" label="Svalbard e Jan Mayen">
+            Svalbard e Jan Mayen
+          </option>
+          <option value="Suécia" label="Suecia">Suecia</option>
+          <option value="Suíça" label="Suica">Suica</option>
+          <option value="Ucrânia" label="Ucrania">Ucrania</option>
+          <option value="Vaticano" label="Vaticano">Vaticano</option>
+        </optgroup>
         </select>
       </div>
 
