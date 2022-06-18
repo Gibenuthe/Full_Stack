@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { AddTutorialComponent } from './components/add-acolhedor/add-acolhedor.component';
 import { TutorialDetailsComponent } from './components/dados-acolhedor/dados-acolhedor.component';
 import { TutorialsListComponent } from './components/lista-acolhedores/lista-acolhedores.component';
+import { TelaInicialComponent } from './components/tela-inicial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddTutorialComponent,
     TutorialDetailsComponent,
-    TutorialsListComponent
+    TutorialsListComponent,
+    TelaInicialComponent
   ],
   imports: [
     BrowserModule,
