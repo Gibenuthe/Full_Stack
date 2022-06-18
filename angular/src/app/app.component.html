@@ -1,19 +1,23 @@
-<div>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a routerLink="inicio" class="nav-link">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="acolhedores" class="nav-link">Acolhedores</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="add" class="nav-link">Adicionar</a>
-      </li>
+<mat-card class="fundo">
+<!-- <body class="fundo"> -->
+  <div>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="inicio" class="nav-link">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="acolhedores" class="nav-link">Acolhedores</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="add" class="nav-link">Adicionar</a>
+        </li>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <router-outlet></router-outlet>
     </div>
-  </nav>
 
-  <div class="container mt-3">
-    <router-outlet></router-outlet>
   </div>
-</div>
+</mat-card>
+<!-- </body> -->

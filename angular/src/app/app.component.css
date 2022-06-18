@@ -1,0 +1,15 @@
+.fundo {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  z-index: 0;
+  opacity: 1;
+  background-image: url("https://www.guiadasemana.com.br/contentFiles/image/opt_w1280h720/2019/06/FEA/63893_shutterstock-612476696-kiev.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100% 100%;
+  /* filter: blur(10px);
+  -webkit-filter: blur(10px); */
+}
