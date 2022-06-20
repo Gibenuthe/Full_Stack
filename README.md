@@ -17,5 +17,6 @@ O projeto é desenvolvido com a estrutura MEAN (MongoDB, Express, Angular e Node
 ## Vídeo Explicação
 --inserir video--
 ## Fotos do Site
-![Image 053](https://user-images.githubusercontent.com/79452579/174686833-4d924e64-3d32-4baf-b151-be44ff8e6114.png)
+![Image 056](https://user-images.githubusercontent.com/79452579/174689330-9da0635b-1a57-4930-9430-37652dfd73c5.png)
+![Image 057](https://user-images.githubusercontent.com/79452579/174689343-4eca1ceb-577f-4437-9322-0188b365a1f3.png)
 ![Image 055](https://user-images.githubusercontent.com/79452579/174686848-b04fa055-76ca-439b-89b8-e5fda29f144a.png)
