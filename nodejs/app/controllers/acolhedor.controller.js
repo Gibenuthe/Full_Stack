@@ -1,15 +1,15 @@
 const db = require("../models");
 const Tutorial = db.tutorials;
 
-// Create and Save a new Tutorial
+// Cria e Salva um novo acolhedor
 exports.create = (req, res) => {
-  // Validate request
+  // Valida a requisição
   if (!req.body.pais) {
-    res.status(400).send({ message: "Content can not be empty!" });
+    res.status(400).send({ message: "Não pode ficar vazio!" });
     return;
   }
 
-  // Create a Tutorial
+  // Cria um acolhedor
   const tutorial = new Tutorial({
     nome: req.body.nome,
     fone: req.body.fone,
@@ -20,7 +20,7 @@ exports.create = (req, res) => {
     idiomas: req.body.idiomas,
   });
 
-  // Save Tutorial in the database
+  // Salva acolhedor no banco
   tutorial
     .save(tutorial)
     .then(data => {
@@ -29,12 +29,12 @@ exports.create = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Tutorial."
+          err.message || "Erro ao cadastrar acolhedor."
       });
     });
 };
 
-// Retrieve all Tutorials from the database.
+// Recupera todos os acolhedores do banco.
 exports.findAll = (req, res) => {
   const pais = req.query.pais;
   var condition = pais ? { pais: { $regex: new RegExp(pais), $options: "i" } } : {};
@@ -46,33 +46,33 @@ exports.findAll = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving tutorials."
+          err.message || "Erro ao obter acolhedores."
       });
     });
 };
 
-// Find a single Tutorial with an id
+// Acha um acolhedor pelo id
 exports.findOne = (req, res) => {
   const id = req.params.id;
 
   Tutorial.findById(id)
     .then(data => {
       if (!data)
-        res.status(404).send({ message: "Not found Tutorial with id " + id });
+        res.status(404).send({ message: "Não encontrou acolhedor com id: " + id });
       else res.send(data);
     })
     .catch(err => {
       res
         .status(500)
-        .send({ message: "Error retrieving Tutorial with id=" + id });
+        .send({ message: "Erro buscando acolhedor com id=" + id });
     });
 };
 
-// Update a Tutorial by the id in the request
+// Atualiza acolhedor pelo id na requisição
 exports.update = (req, res) => {
   if (!req.body) {
     return res.status(400).send({
-      message: "Data to update can not be empty!"
+      message: "Dados para atualizar não podem estar vazios!"
     });
   }
 
@@ -82,18 +82,18 @@ exports.update = (req, res) => {
     .then(data => {
       if (!data) {
         res.status(404).send({
-          message: `Cannot update Tutorial with id=${id}. Maybe Tutorial was not found!`
+          message: `Não foi possível atualizar acolhedor com id=${id}. Talvez não tenha sido encontrado!`
         });
-      } else res.send({ message: "Tutorial was updated successfully." });
+      } else res.send({ message: "Acolhedor atualizado com sucesso!." });
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Tutorial with id=" + id
+        message: "Erro atualizando acolhedor com id=" + id
       });
     });
 };
 
-// Delete a Tutorial with the specified id in the request
+// Deleta acolhedor pelo id na requisição
 exports.delete = (req, res) => {
   const id = req.params.id;
 
@@ -101,38 +101,38 @@ exports.delete = (req, res) => {
     .then(data => {
       if (!data) {
         res.status(404).send({
-          message: `Cannot delete Tutorial with id=${id}. Maybe Tutorial was not found!`
+          message: `Não foi possível atualizar acolhedor com id=${id}. Talvez não tenha sido encontrado!`
         });
       } else {
         res.send({
-          message: "Tutorial was deleted successfully!"
+          message: "Acolhedor deletado com sucesso!"
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Tutorial with id=" + id
+        message: "Erro deletando acolhedor com id=" + id
       });
     });
 };
 
-// Delete all Tutorials from the database.
+// Deleta todos acolhedores do banco.
 exports.deleteAll = (req, res) => {
   Tutorial.deleteMany({})
     .then(data => {
       res.send({
-        message: `${data.deletedCount} Tutorials were deleted successfully!`
+        message: `${data.deletedCount} Acolhedores deletados com sucesso!`
       });
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while removing all tutorials."
+          err.message || "Erro removendo todos os acolhedores."
       });
     });
 };
 
-// Find all published Tutorials
+// Encontrar todos os acolhedores
 exports.findAllPublished = (req, res) => {
   Tutorial.find({ published: true })
     .then(data => {
@@ -141,7 +141,7 @@ exports.findAllPublished = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving tutorials."
+          err.message || "Erro ao buscar todos os acolhedores."
       });
     });
 };

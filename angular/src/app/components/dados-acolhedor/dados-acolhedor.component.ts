@@ -65,7 +65,7 @@ export class TutorialDetailsComponent implements OnInit {
         //this.currentTutorial.published = status;
         this.message = res.message
           ? res.message
-          : 'The status was updated successfully!';
+          : 'Status atualizado com sucesso';
       },
       error: (e) => console.error(e),
     });
@@ -81,7 +81,7 @@ export class TutorialDetailsComponent implements OnInit {
           console.log(res);
           this.message = res.message
             ? res.message
-            : 'This tutorial was updated successfully!';
+            : 'Acolhedor atualizado com sucesso';
         },
         error: (e) => console.error(e),
       });

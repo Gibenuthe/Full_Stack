@@ -3,25 +3,22 @@ module.exports = app => {
 
   var router = require("express").Router();
 
-  // Create a new Tutorial
+  // Cria um acolhedor
   router.post("/", tutorials.create);
 
-  // Retrieve all Tutorials
+  // Busca todos acolhedores
   router.get("/", tutorials.findAll);
 
-  // Retrieve all published Tutorials
-  router.get("/published", tutorials.findAllPublished);
-
-  // Retrieve a single Tutorial with id
+  // Busca acolhedor pelo id
   router.get("/:id", tutorials.findOne);
 
-  // Update a Tutorial with id
+  // Atualiza acolhedor pelo id
   router.put("/:id", tutorials.update);
 
-  // Delete a Tutorial with id
+  // Deleta acolhedor pelo id
   router.delete("/:id", tutorials.delete);
 
-  // Create a new Tutorial
+  // Cria novo acolhedor
   router.delete("/", tutorials.deleteAll);
 
   app.use("/api/acolhedores", router);
