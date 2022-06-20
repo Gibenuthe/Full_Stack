@@ -3,3 +3,9 @@
   max-width: 750px;
   margin: auto;
 }
+input.form-control, textarea{
+  background-color: #FFB88C;
+}
+/* list-group-item{ MUDAR COR!!
+  background-color: #9B97AD;
+} */

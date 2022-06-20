@@ -7,4 +7,9 @@
   font-size: large;
   letter-spacing: 2px;
 }
-
+select.form-control, textarea{
+  background-color: #9B97AD;
+}
+input.form-control, textarea{
+  background-color: #9B97AD;
+}
