@@ -6,6 +6,13 @@
 input.form-control, textarea{
   background-color: #FFB88C;
 }
-/* list-group-item{ MUDAR COR!!
+.list-group .list-group-item{
   background-color: #9B97AD;
-} */
+  border-top: 1px solid #000;
+  border-left-color: black;
+  border-right-color: black;
+  border-bottom-color: black ;
+}
+.list-group .list-group-item:hover {
+  background-color: #b8b4ca;
+}
