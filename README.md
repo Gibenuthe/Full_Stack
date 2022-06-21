@@ -15,7 +15,7 @@ A plataforma visa o cadastro de acolhedores em um banco de dados para que ucrani
 O projeto é desenvolvido com a estrutura MEAN (MongoDB, Express, Angular e NodeJs) onde usamos Angular para o front-end e requisições através do framework Express que se comunicam com um back-end em JavaScript conectado a um banco de dados em nuvem MongoDB.
 
 ## Vídeo Explicação
---inserir video--
+[Vídeo Explicativo (Youtube)](https://youtu.be/7fWOAPVgcik)
 ## Fotos do Site
 ![Image 056](https://user-images.githubusercontent.com/79452579/174689330-9da0635b-1a57-4930-9430-37652dfd73c5.png)
 ![Image 057](https://user-images.githubusercontent.com/79452579/174689343-4eca1ceb-577f-4437-9322-0188b365a1f3.png)
